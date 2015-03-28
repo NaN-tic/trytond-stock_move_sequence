@@ -1,0 +1,11 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:stock.move,sequence:"
+msgid "Sequence"
+msgstr "Seqüència"
+
+msgctxt "view:stock.move:"
+msgid "Moves"
+msgstr "Moviments"
