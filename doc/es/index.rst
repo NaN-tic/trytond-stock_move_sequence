@@ -1,5 +1,5 @@
 ===================================
-Módulo secuencia en líneas de stock
+Stock. Secuencia en los movimientos 
 ===================================
 
 Añade un campo de secuencia en los movimientos de stock. En los albaranes de
