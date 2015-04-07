@@ -7,6 +7,6 @@ copyright notices and license terms. -->
         <tree string="Moves" sequence="sequence"/>
     </xpath>
     <xpath expr="/tree/field[@name='product']" position="before">
-        <field name="sequence"/>
+        <field name="sequence" tree_invisible="1"/>
     </xpath>
 </data>
