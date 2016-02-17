@@ -10,5 +10,18 @@ copyright notices and license terms. -->
             <field name="inherit" ref="stock.move_view_form"/>
             <field name="name">move_form</field>
         </record>
+        <record model="ir.ui.view" id="move_view_tree">
+            <field name="model">stock.move</field>
+            <field name="type">form</field>
+            <field name="inherit" ref="stock.move_view_tree"/>
+            <field name="name">move_tree</field>
+        </record>
+    </data>
+    <data depends="stock_origin_purchase">
+        <record model="ir.ui.view" id="move_purchase_view_tree">
+            <field name="model">stock.move</field>
+            <field name="inherit" ref="stock_origin_purchase.move_purchase_view_tree"/>
+            <field name="name">move_purchase_tree</field>
+        </record>
     </data>
 </tryton>
