@@ -4,10 +4,9 @@
 from trytond.pool import PoolMeta
 __all__ = ['SaleLine']
 
-__metaclass__ = PoolMeta
-
 
 class SaleLine:
+    __metaclass__ = PoolMeta
     __name__ = 'sale.line'
 
     def get_move(self, shipment_type):

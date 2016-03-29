@@ -5,10 +5,10 @@ from trytond.model import fields
 from trytond.pool import PoolMeta
 
 __all__ = ['ShipmentIn', 'ShipmentOut', 'ShipmentOutReturn']
-__metaclass__ = PoolMeta
 
 
-class ShipmentIn():
+class ShipmentIn:
+    __metaclass__ = PoolMeta
     __name__ = 'stock.shipment.in'
 
     @classmethod
@@ -38,7 +38,8 @@ class ShipmentIn():
         self.incoming_moves = incoming_moves
 
 
-class ShipmentOut():
+class ShipmentOut:
+    __metaclass__ = PoolMeta
     __name__ = 'stock.shipment.out'
 
     def _get_inventory_move(self, move):
@@ -65,7 +66,8 @@ class ShipmentOut():
         self.outgoing_moves = outgoing_moves
 
 
-class ShipmentOutReturn():
+class ShipmentOutReturn:
+    __metaclass__ = PoolMeta
     __name__ = 'stock.shipment.out.return'
 
     @classmethod
