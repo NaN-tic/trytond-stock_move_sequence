@@ -1,16 +1,15 @@
 # This file is part of the stock_move_sequence module for Tryton.
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
-from trytond.model import fields
+from trytond.model import fields, sequence_ordered
 from trytond.pool import PoolMeta
 
 __all__ = ['Move']
 
 
-class Move:
+class Move(sequence_ordered()):
     __metaclass__ = PoolMeta
     __name__ = 'stock.move'
-    sequence = fields.Integer('Sequence')
 
     @classmethod
     def __setup__(cls):
