@@ -2,7 +2,7 @@
 <!-- This file is part stock_move_warehouse module for Tryton.
 The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
 <data>
-    <xpath expr="/tree/field[@name='assignation_required']" position="after">
+    <xpath expr="/tree/field[@name='unit_digits']" position="after">
         <field name="sequence" tree_invisible="1"/>
     </xpath>
 </data>
