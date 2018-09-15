@@ -15,12 +15,10 @@ def register():
         shipment.ShipmentOut,
         shipment.ShipmentOutReturn,
         module='stock_move_sequence', type_='model')
-def register():
     Pool.register(
         sale.SaleLine,
         depends=['sale'],
         module='stock_move_sequence', type_='model')
-def register():
     Pool.register(
         purchase.PurchaseLine,
         depends=['purchase'],
