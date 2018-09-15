@@ -7,8 +7,7 @@ from trytond.pool import PoolMeta
 __all__ = ['Move']
 
 
-class Move(sequence_ordered()):
-    __metaclass__ = PoolMeta
+class Move(sequence_ordered(), metaclass=PoolMeta):
     __name__ = 'stock.move'
 
     @classmethod
